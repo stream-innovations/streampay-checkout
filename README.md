@@ -1,6 +1,6 @@
-# [StreamPay Checkout dApp](https://checkout.streampayments.co) &middot; [StreamPay](https://streampayments.co/)  [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE-MIT) [![GitHub license](https://img.shields.io/badge/license-Apache%202-blue)](./LICENSE-APACHE)
+## [StreamPay Checkout dApp](https://checkout.streampayments.co) &middot; [StreamPay](https://streampayments.co/)  [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE-MIT) [![GitHub license](https://img.shields.io/badge/license-Apache%202-blue)](./LICENSE-APACHE)
 
-# StreamPay Checkout — trustable permissionless DeFi payment gateway 
+#### StreamPay Checkout — trustable permissionless DeFi payment gateway 
 
 StreamPay Checkout helps anyone permission-less adopt checkout backed by StreamPay, receive payments automatically, and benefit from all the advantages of StreamPay Rollup: speed of the transaction, times lower cost of a single transaction, simplicity of withdrawal fund to the on-chain-wallet.
 
