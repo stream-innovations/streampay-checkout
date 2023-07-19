@@ -1,0 +1,27 @@
+// Core
+@import "./default.scss";
+
+//Layouts
+@import "./layouts/default.scss";
+
+//Blocks
+@import "./blocks/infoBlock.scss";
+@import "./blocks/lineTableHeader.scss";
+@import "./blocks/loggingIn.scss";
+@import "./blocks/connectedWallet.scss";
+@import "./blocks/onboard.scss";
+@import "./blocks/modals.scss";
+@import "./blocks/footer.scss";
+
+//Components
+@import "./components/amountInput.scss";
+@import "./components/maxHeight.scss";
+@import "./components/transactionToken.scss";
+@import "./components/rampBtn.scss";
+@import "./components/tooltip.scss";
+@import "./components/tokenDropdown.scss";
+
+//Pages
+@import "./pages/index.scss";
+@import "./pages/connect.scss";
+@import "./pages/link.scss";

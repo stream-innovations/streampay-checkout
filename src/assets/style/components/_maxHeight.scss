@@ -1,0 +1,49 @@
+.maxHeightBlock {
+    @media (min-width: $mobile) {
+        &.mobile {
+            height: auto !important;
+        }
+    }
+}
+
+@media (min-width: $mobile) {
+    .linkLayout .linkPage .FooterContainer #built-by-matterlabs {
+        position: absolute;
+        bottom: 40px;
+    }
+}
+
+@media (max-width: $mobile) {
+    .linkPage {
+        .maxHeightBlock {
+            @apply bg-white;
+            height: 110px;
+            position: absolute !important;
+            top: -1.5rem;
+            transform: translateY(-100%);
+            width: 100vw;
+            padding: 0 5vw;
+            left: 0;
+        }
+        .linkFooter {
+            @apply fixed bottom-0 w-full bg-white left-0 p-0;
+        }
+        .FooterContainer {
+            box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.05), 0 -2px 4px -1px rgba(0, 0, 0, 0.05);
+            flex-direction: column;
+            height: auto;
+            align-items: center;
+            grid-gap: 5px;
+            &>* {
+                margin-bottom: 5px;
+            }
+            .poweredBy {
+                margin-left: 0;
+            }
+            .rightSide {
+                justify-content: center;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

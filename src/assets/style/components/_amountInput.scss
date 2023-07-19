@@ -1,0 +1,159 @@
+.amountInputGroup {
+  width: max-content;
+  height: 36px;
+  padding-left: 0;
+  padding-right: 2px;
+  display: flex;
+  align-items: center;
+  border: 1px solid $light;
+  transition: $transition;
+  transition-property: border-color;
+  will-change: border-color;
+
+  &:not(:disabled) {
+    &.focused {
+      border-color: $violet;
+
+      .leftSide {
+        .amInputContainer {
+          .penIcon {
+            color: $violet;
+          }
+        }
+      }
+    }
+
+    .leftSide {
+      cursor: text;
+    }
+  }
+
+  &.error {
+    border-color: $red !important;
+
+    .leftSide .amInputContainer input {
+      color: $red;
+    }
+  }
+
+  &.hasUnderInput {
+    .leftSide {
+      height: 100%;
+    }
+  }
+
+  .leftSide {
+    display: flex;
+    width: max-content;
+    height: max-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: default;
+
+    .amInputContainer {
+      height: 18px;
+      width: max-content;
+      display: flex;
+      align-items: center;
+
+      input,
+      .sizeSpan {
+        display: block;
+        font-family: $firaSans;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      input {
+        position: relative;
+        left: 2px;
+        height: 100%;
+        width: 0;
+        min-width: 50px;
+        line-height: 18px;
+        color: $black2;
+        text-align: right;
+        background-color: transparent;
+        outline: none !important;
+        border: none;
+        transition: 0.05s ease;
+        transition-property: width;
+        will-change: width;
+        padding: 0 2px;
+        box-sizing: content-box;
+
+        &::placeholder {
+          color: $gray;
+          font-weight: 400;
+          font-size: 14px;
+        }
+      }
+
+      @media screen and (max-width: $breakpoint1) {
+        max-width: 100px;
+      }
+
+      .sizeSpan {
+        position: absolute;
+        width: max-content;
+        z-index: -9999;
+        left: -9999px;
+        top: -9999px;
+        opacity: 0;
+      }
+
+      .penIcon {
+        transition: $transition;
+        transition-property: color;
+        will-change: color;
+        color: transparentize($color: $gray, $amount: 0.4);
+        width: 15px;
+        pointer-events: none;
+
+        i {
+          display: block;
+          font-size: 10px;
+          line-height: 18px;
+          padding-left: 5px;
+        }
+      }
+    }
+
+    .underInput {
+      color: $gray;
+      font-size: 9px;
+      line-height: 12px;
+      font-family: $firaCondensed;
+    }
+  }
+
+  .rightSide {
+    height: max-content;
+    width: max-content;
+    padding-left: 7px;
+  }
+}
+
+.darkMode .amountInputGroup {
+  border-color: $dark2;
+  &:not(:disabled).focused {
+    border-color: $lightViolet;
+
+    .leftSide .amInputContainer .penIcon {
+      color: $lightViolet;
+    }
+  }
+  .leftSide {
+    .amInputContainer input {
+      color: $gray;
+
+      &::placeholder {
+        color: $dark2;
+      }
+    }
+    .underInput {
+      color: $dark3;
+    }
+  }
+}
