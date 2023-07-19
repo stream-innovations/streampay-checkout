@@ -1,14 +1,14 @@
-# [StreamPay Checkout dApp](https://checkout.streampayments.co) &middot; [StreamPay.io](https://streampayments.co/)  [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE-MIT) [![GitHub license](https://img.shields.io/badge/license-Apache%202-blue)](./LICENSE-APACHE)
+# [StreamPay Checkout dApp](https://checkout.streampayments.co) &middot; [StreamPay](https://streampayments.co/)  [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE-MIT) [![GitHub license](https://img.shields.io/badge/license-Apache%202-blue)](./LICENSE-APACHE)
 
 # StreamPay Checkout — trustable permissionless DeFi payment gateway 
 
-StreamPay Checkout helps anyone permission-less adopt checkout backed by StreamPay, receive payments automatically and benefit from all the advantage of StreamPay Rollup: speed of the transaction, times lower cost of a single transaction, simplicity of withdrawal fund to the onchain-wallet.
+StreamPay Checkout helps anyone permission-less adopt checkout backed by StreamPay, receive payments automatically, and benefit from all the advantages of StreamPay Rollup: speed of the transaction, times lower cost of a single transaction, simplicity of withdrawal fund to the on-chain-wallet.
 
 * **[SDK documentation](https://streampayments.co/api/sdk/checkout/)** | [**Changelog**](CHANGELOG.md)
 
 ## Deployment
 
-StreamPay uses firebase hosting for all it's dApps.
+StreamPay uses Firebase hosting for all its dApps.
 Resource targets for the zkCheckout are:
 
 ### Available Hosts
@@ -41,7 +41,7 @@ $ yarn ci:build:mainnet
 
 ### cli-dev.sh
 
-This helper-script is used to simplify regular tasks when developing or using the package:
+This helper script is used to simplify regular tasks when developing or using the package:
 
 ```bash
 # removes all generated directories & run package installation with the yarn2.* based on stored yarn.lock with the modifier --check-cache
@@ -70,20 +70,20 @@ $ yarn format:prettier
 $ yarn spell-check
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+For a detailed explanation of how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
 ---
 
 
 ## Release CI
 
-> This sharable configuration conforms to angular standard
+> This sharable configuration conforms to the Angular standard
 
 * Using [@semantic-release/commit-analyzer](https://github.com/semantic-release/commit-analyzer) ensures that commits are conformed to the [conventional commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/) specification. 
     * **PATCH** version created if any of **build**, **ci**, **chore**, **docs**, **refactor**, **style**, **test** commit types pushed to master 
     * **MINOR** version created if fix commit type pushed MAJOR version created if feat commit type pushed
     * **MAJOR** version created if feat commit type pushed
-* By default, config used publishes the new version to NPM. But in StreamPay's case release flow differs from the deployment flow.
+    * By default, the config used publishes the new version to NPM. But in StreamPay's case release flow differs from the deployment flow.
     * Bumps a version in package.json. 
     * Generates or updates a [changelog](CHANGELOG.md) file including all **PATCH** keywords (not included in default angular package). 
     * Releases new release for the GitHub repo
@@ -100,7 +100,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
    * inc. [@nuxt/typescript-build](https://typescript.nuxtjs.org/guide/setup)
    * inc. [@nuxt/typescript-runtime](https://typescript.nuxtjs.org/guide/runtime)
    * w/t built-in linting [typescript-runtime-linting](https://typescript.nuxtjs.org/guide/lint)
-   * store is build on top of [Vanilla Vuex](https://typescript.nuxtjs.org/cookbook/store#vanilla)
+   * store is built on top of [Vanilla Vuex](https://typescript.nuxtjs.org/cookbook/store#vanilla)
 * [Axios Nuxtjs](https://axios.nuxtjs.org/) 
 * [Nuxt social meta](https://github.com/AlekseyPleshkov/nuxt-social-meta) 
 * [Sentry](https://sentry.nuxtjs.org/) 
