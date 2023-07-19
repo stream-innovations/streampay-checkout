@@ -9,7 +9,7 @@ StreamPay Checkout helps anyone permission-less adopt checkout backed by StreamP
 ## Deployment
 
 StreamPay uses Firebase hosting for all its dApps.
-Resource targets for the zkCheckout are:
+Resource targets for the Checkout are:
 
 ### Available Hosts
 
